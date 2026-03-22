@@ -1,4 +1,4 @@
-package com.dsaAtoZ.Array;
+package com.dsa.Array;
 
 public class LongestSubArrayWithKSum {
 

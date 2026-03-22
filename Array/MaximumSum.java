@@ -1,4 +1,4 @@
-package com.dsaAtoZ.Array;
+package com.dsa.Array;
 
 // Given an integer array , find the subArray with the largest sum, and return its sum.
 // Kadane's Algorithm | Maximum SubArray Sum

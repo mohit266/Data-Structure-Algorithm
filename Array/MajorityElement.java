@@ -1,4 +1,4 @@
-package com.dsaAtoZ.Array;
+package com.dsa.Array;
 
 // https://leetcode.com/problems/majority-element/description/
 // Moore's Voting Algorithm

@@ -1,4 +1,4 @@
-package com.dsaAtoZ.Array;
+package com.dsa.Array;
 
 //This problem is for sorted array.
 // https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/

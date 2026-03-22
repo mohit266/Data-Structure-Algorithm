@@ -1,4 +1,4 @@
-package com.dsaAtoZ.BasicRecursion;
+package com.dsa;
 
 import java.util.Arrays;
 

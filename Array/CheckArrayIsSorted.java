@@ -1,4 +1,4 @@
-package com.dsaAtoZ.Array;
+package com.dsa.Array;
 
 // https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/description/
 public class CheckArrayIsSorted {

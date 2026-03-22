@@ -1,4 +1,4 @@
-package com.dsaAtoZ.Array;
+package com.dsa.Array;
 
 // https://leetcode.com/problems/best-time-to-buy-and-sell-stock
 public class BestTimeToBuyAndSellStock {
