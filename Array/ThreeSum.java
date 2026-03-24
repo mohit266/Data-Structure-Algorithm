@@ -38,14 +38,6 @@ public class ThreeSum {
             while (j < k){
                 sum = nums[i] + nums[j] + nums[k];
 
-                if (sum < 0){
-                    j++;
-                }
-
-                if (sum > 0){
-                    k--;
-                }
-
                 if (sum == 0){
                     List<Integer> ls = Arrays.asList(nums[i], nums[j], nums[k]);
                     ans.add(ls);
@@ -54,6 +46,10 @@ public class ThreeSum {
 
                     while (j < k && nums[j] == nums[j-1]) j++;
                     while (j < k && nums[k] == nums[k+1]) k--;
+                } else if (sum < 0){
+                    j++;
+                } else {
+                    k--;
                 }
             }
         }
