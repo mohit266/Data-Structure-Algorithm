@@ -1,4 +1,4 @@
-package com.dsaAtoZ.Array;
+package com.dsa.Array;
 
 import java.util.HashMap;
 import java.util.Map;
