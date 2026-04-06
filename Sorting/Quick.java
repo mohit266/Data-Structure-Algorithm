@@ -24,7 +24,7 @@ public class Quick {
         int j = high;
 
         while (i<j){
-            while (arr[i] <= pivot && i <= high + 1){
+            while (arr[i] <= pivot && i <= high - 1){
                 i++;
             }
 
