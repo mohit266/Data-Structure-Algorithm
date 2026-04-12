@@ -1,4 +1,6 @@
-package com.dsa.LinkedList;
+package com.dsa.LinkedList.basics;
+
+import com.dsa.LinkedList.Node;
 
 public class LinkedListBasic {
     public static void main(String[] args) {
@@ -46,6 +48,39 @@ public class LinkedListBasic {
         Node insertTailNode = insertTail(head, 15);
         System.out.println("Insert new tail node 15 :: ");
         printLL(insertTailNode);
+
+        Node insertNewNod = insertElementAtKPosition(head, 25, 2);
+        System.out.println("Insert element at 2 position :: ");
+        printLL(insertNewNod);
+    }
+
+    public static Node insertElementAtKPosition(Node head, int el, int k){
+        if (head == null){
+            if (k == 1){
+                return new Node(el);
+            }
+        }
+
+        if (k == 1){
+            return new Node(el, head);
+        }
+
+        Node temp = head;
+        int cnt = 0;
+
+        while (temp != null){
+            cnt++;
+
+            if (cnt == k - 1){
+                Node newNode = new Node(el, temp.next);
+                temp.next = newNode;
+                break;
+            }
+            temp = temp.next;
+        }
+
+        return head;
+
     }
 
     public static Node insertNewHead(Node head, int k){
