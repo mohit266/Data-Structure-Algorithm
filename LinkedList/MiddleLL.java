@@ -7,10 +7,25 @@ public class MiddleLL {
         int [] arr = {1, 2, 3, 4, 5};
 
         Node head = convertArrayToLL(arr);
-        Node midNode = middleNode(head);
+        Node midNode = findMiddleNode(head);
         printLL(midNode);
     }
 
+
+    // OptimalApproach
+    public static Node findMiddleNode(Node head){
+        Node slow = head;
+        Node fast = head;
+
+        while (fast != null && fast.next != null){
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return slow;
+    }
+
+
+    // TC - O(N) + O(N/2)
     public static Node middleNode(Node head) {
         Node temp = head;
         int cnt= 0;
