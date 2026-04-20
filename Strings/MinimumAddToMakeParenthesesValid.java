@@ -41,12 +41,6 @@ public class MinimumAddToMakeParenthesesValid {
                 }
             }
         }
-
-        int res = closingBracket + openingBracket;
-
-        if (res < 0){
-            return res * -1;
-        }
-        return res;
+        return closingBracket + openingBracket;
     }
 }
