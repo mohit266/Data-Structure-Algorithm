@@ -39,7 +39,7 @@ public class StackUsingLinkedList {
         head = head.next;
         temp.next = null;
         size -= 1;
-        return head.data;
+        return temp.data;
     }
 
     public static int top(){
