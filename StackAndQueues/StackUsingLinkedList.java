@@ -9,12 +9,10 @@ public class StackUsingLinkedList {
     static Node head;
     static int size;
 
-    public StackUsingLinkedList(){
+    public static void main(String[] args) {
         head = null;
         size = 0;
-    }
 
-    public static void main(String[] args) {
         push(10);
         push(20);
 

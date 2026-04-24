@@ -9,13 +9,12 @@ public class QueueUsingLinkedList {
     static Node end;
     static int size;
 
-    QueueUsingLinkedList(){
+
+    public static void main(String[] args) {
         start = null;
         end = null;
         size = 0;
-    }
 
-    public static void main(String[] args) {
         push(10);
         push(20);
 
@@ -48,7 +47,7 @@ public class QueueUsingLinkedList {
         int value = start.data;
         Node temp = start;
         start = start.next;
-        temp = null;
+        temp.next = null;
         size--;
 
         return value;
