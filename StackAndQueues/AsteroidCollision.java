@@ -5,11 +5,9 @@ import java.util.Stack;
 
 public class AsteroidCollision {
     public static void main(String[] args) {
-         int[] asteroids = {-2,-1,1,2};
+         int[] asteroids = {10, 20, -10};
 
         System.out.println(Arrays.toString(asteroidCollision(asteroids)));
-
-        //Output: [-4, -2]
     }
 
     public static int[] asteroidCollision(int[] asteroids) {
