@@ -7,7 +7,6 @@ public class RemoveKDigits {
         String num = "1002991";
         int k = 3;
 
-        // output = 1219
         System.out.println(removeKdigits(num, k));
 
     }
