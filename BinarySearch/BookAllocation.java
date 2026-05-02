@@ -11,6 +11,7 @@ public class BookAllocation {
     }
 
     public static int findPages(int[] nums, int m) {
+
         int low = getMin(nums);
         int high = Arrays.stream(nums).sum();
 
