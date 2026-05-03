@@ -1,6 +1,7 @@
 package com.dsa.BinarySearch;
 
 public class MedianOfSortedArrays {
+    // Revised on 3rd May.
     public static void main(String[] args) {
         int[] nums2 = {3,4};
         int[] nums1 = {1,2};
