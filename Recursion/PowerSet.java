@@ -27,14 +27,9 @@ class PowerSet {
             return;
         }
 
-        // Recursive case: Exclude the current element and move to the next element
         backtrack(index + 1, n, nums, current, ans);
-
-        // Include the current element in the subset and move to the next element
         current.add(nums[index]);
         backtrack(index + 1, n, nums, current, ans);
-
-        // Backtrack: remove the last added element to explore other subsets
         current.remove(current.size() - 1);
     }
 
