@@ -1,0 +1,6 @@
+Revision done for all the FAQs - 16th May 2026
+
+Need again to check
+
+1. Reverse LL in group of given size K
+2. Clone a LL with random and next pointer.
