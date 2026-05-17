@@ -8,32 +8,28 @@ public class TrappingRainWater {
     }
 
     public static int trapOptimal(int[] height){
+        int n = height.length;
         int left = 0;
-        int right = height.length-1;
+        int right = n - 1;
 
-        int leftMax = 0;
-        int rightMax = 0;
+        int lMax = 0;
+        int rMax = 0;
 
-        int total = 0;
+        int ans = 0;
 
-        while (left < right){
-            if (height[left] <= height[right]){
-                if (leftMax > height[left]){
-                    total = total + (leftMax - height[left]);
-                } else {
-                    leftMax = height[left];
-                }
+        while(left < right){
+            lMax = Math.max(lMax, height[left]);
+            rMax = Math.max(rMax, height[right]);
+
+            if (lMax < rMax){
+                ans += (lMax - height[left]);
                 left++;
             } else {
-                if (rightMax > height[right]){
-                    total = total + (rightMax - height[right]);
-                } else {
-                    rightMax = height[right];
-                }
+                ans += (rMax - height[right]);
                 right--;
             }
         }
-        return total;
+        return ans;
     }
 
     // Brute force
