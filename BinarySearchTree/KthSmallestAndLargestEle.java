@@ -15,8 +15,10 @@ public class KthSmallestAndLargestEle {
         root.left.right = new TreeNode(2);
 
         System.out.println(obj.kthSmallest(root, 2));
+        System.out.println(obj.kthLargest(root, 2));
 
     }
+
 
     public int kthSmallest(TreeNode root, int k) {
         if (root == null){
@@ -26,6 +28,17 @@ public class KthSmallestAndLargestEle {
         List<Integer> inOrderRes = getInOrderPath(root);
 
         return inOrderRes.get(k-1);
+
+    }
+
+    public int kthLargest(TreeNode root, int k) {
+        if (root == null){
+            return -1;
+        }
+
+        List<Integer> inOrderRes = getInOrderPath(root);
+
+        return inOrderRes.get(inOrderRes.size()-k);
 
     }
 
