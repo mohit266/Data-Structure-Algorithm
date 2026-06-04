@@ -6,10 +6,10 @@ public class Main {
     public static void main(String[] args) {
 
         // List or collection --> Interface
-        // We can create object of ArrayList in three type.
+        // We can create objects of ArrayList in three type.
 
-        // 1. Because collection is root interface and ArrayList implements List interface so  all its
-        // method implementation is present.
+        // 1. Because collection is root interface and ArrayList implements List interface and List parent is Collection
+        // so  all its method implementation is present.
         Collection<Integer> cl = new ArrayList<>();
 
         // 2. List extends Collection interface.
@@ -64,6 +64,25 @@ public class Main {
         // Sort - Descending Order
         Collections.sort(list, Collections.reverseOrder());
         System.out.println(list);
+
+
+        Collections.sort(list);
+
+        ArrayList<Integer> newList = (ArrayList<Integer>) list.clone();
+        System.out.println(newList);
+
+        // Linked List -- There is no clone method in LL like ArrayList.
+
+        // Vector is synchronized and less efficient than ArrayList.
+        Vector<Integer> vector = new Vector<>();
+
+        // --------------- Queue Interface ------------------
+        // Three types in which we can create queue
+
+        Queue<Integer> queue1 = new LinkedList<>();
+        Queue<Integer> queue2 = new ArrayDeque<>();
+        Queue<Integer> queue3 = new PriorityQueue<>();
+
 
     }
 }
