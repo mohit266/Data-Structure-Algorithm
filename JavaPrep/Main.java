@@ -84,5 +84,38 @@ public class Main {
         Queue<Integer> queue3 = new PriorityQueue<>();
 
 
+
+        // Set Interface - Store only unique elements.
+        HashSet<Integer> hs = new HashSet<>();
+
+        hs.add(10);
+        hs.add(10);
+
+        System.out.println(hs);
+
+        // HashSet = Contains unordered elements. TC - O(1)
+        // LinkedHashSet = TC - Manages the insertion order of the elements - O(N)
+        // TreeSet = Contains elements in sorted order BST --> TC - O(logN)
+
+
+        HashSet<Student> st = new HashSet<>();
+
+        Student s1 = new Student(1, "Mohit");
+        Student s2 = new Student(1, "Mohit");
+        Student s3 = new Student(1, "Mohit");
+
+        st.add(s1);
+        st.add(s2);
+        st.add(s3);
+
+        System.out.println(st);
+
+        HashMap<Integer, String> mp = new HashMap<>();
+        mp.put(1, "abv");
+
+        for (Map.Entry<Integer, String> obje : mp.entrySet()){
+            System.out.println(obje);
+        }
+
     }
 }
