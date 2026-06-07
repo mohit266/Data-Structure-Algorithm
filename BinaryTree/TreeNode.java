@@ -1,11 +1,11 @@
 package com.dsa.BinaryTree;
 
 public class TreeNode {
-    int data;
-    TreeNode left;
-    TreeNode right;
+    public int data;
+    public TreeNode left;
+    public TreeNode right;
 
-    TreeNode(int data){
+    public TreeNode(int data){
         this.data = data;
         left = null;
         right = null;
