@@ -116,23 +116,6 @@ public class Main {
         for (Map.Entry<Integer, String> obje : mp.entrySet()){
             System.out.println(obje);
         }
-
-        ArrayList<Student> students = new ArrayList<>();
-
-        Student st1 = new Student(1, "Mohit");
-        Student st4 = new Student(4, "Dinesh");
-        Student st2 = new Student(2, "Rahul");
-
-        students.add(st1);
-        students.add(st2);
-        students.add(st4);
-
-
-        Collections.sort(students);
-
-
-        Collections.sort(students, Comparator.comparingInt(Student::getId).reversed().thenComparing(Student::getName));
-        System.out.println(students);
     }
 
 
