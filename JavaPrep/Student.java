@@ -5,10 +5,25 @@ import java.util.Objects;
 public class Student implements Comparable<Student> {
     private int id;
     private String name;
+    private int salary;
 
     Student(int id, String name){
         this.id = id;
         this.name = name;
+    }
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    Student(int id, String name, int salary){
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
     }
 
 
