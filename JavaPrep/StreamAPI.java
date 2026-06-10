@@ -163,6 +163,50 @@ public class StreamAPI {
         Set<Integer> convSet = list1.stream().collect(Collectors.toSet());
         System.out.println(convSet);
 
+        // 24. Convert List to Map
+        ArrayList<Student> stds = new ArrayList<>();
 
+        Student s1 = new Student(1, "Mohit", 20000);
+        Student s2 = new Student(2, "Aman", 15000);
+        Student s3 = new Student(3, "Dinesh", 20000);
+
+        stds.add(s1);
+        stds.add(s2);
+        stds.add(s3);
+
+        Map<Integer, String> stMp = stds.stream().collect(Collectors.toMap(Student::getId, Student::getName));
+        System.out.println(stMp);
+
+        // 25. Partition Even and Odd Numbers.
+        Map<Boolean, List<Integer>> evenAndOdd = list1.stream().distinct().collect(Collectors.partitioningBy(n -> n%2 ==0));
+        System.out.println("\n25. Partition Even and Odd Numbers :: "+evenAndOdd);
+
+        // 26. Find duplicate elements in a list
+        Set<Integer> duplicateElements = list1.stream()
+                .collect(Collectors.groupingBy(n -> n, Collectors.counting()))
+                .entrySet().stream().filter(e -> e.getValue() > 1)
+                .map(Map.Entry::getKey)
+                .collect(Collectors.toSet());
+
+        System.out.println("\n26. Duplicate Elements :: " +duplicateElements);
+
+        // 27. Sort List by custom object property
+        List<Student> sorted = stds.stream().sorted((a,b) ->b.getId() - a.getId()).toList();
+        System.out.println("\n27. Sort List :: " +sorted);
+
+        // 28. Count frequency of elements in a list.
+        Map<String, Long> freq = list2.stream().collect(Collectors.groupingBy(s -> s, Collectors.counting()));
+        System.out.println("\n28. Count frequency of elements :: " +freq);
+
+        // 29. Find the Longest String
+        List<String> words = Arrays.asList("Stream", "API", "is", "powerful");
+        String maxLen = words.stream().sorted((a,b) -> b.length() - a.length()).findFirst().get();
+        System.out.println("\n29. Find the Longest String :: " +maxLen);
+
+        // 30. Count Frequency of Characters in a String
+        String input = "success";
+        Map<Character, Long> m = input.chars().mapToObj(c -> (char) c)
+                .collect(Collectors.groupingBy(c -> c, Collectors.counting()));
+        System.out.println("\n30. Count Frequency of Characters in a String :: "+m);
     }
 }
