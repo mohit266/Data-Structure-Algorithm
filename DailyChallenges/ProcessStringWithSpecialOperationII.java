@@ -10,7 +10,7 @@ public class ProcessStringWithSpecialOperationII {
     public char processStr(String s, long k) {
         int n = s.length();
 
-        int len= 0;
+        long len= 0;
         for(int i = 0; i < n; i++){
             char ch = s.charAt(i);
 
