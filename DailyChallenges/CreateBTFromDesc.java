@@ -1,4 +1,4 @@
-package com.dsa.BinaryTree.LeetCodeDailyChallenge;
+package com.dsa.DailyChallenges;
 
 import com.dsa.BinaryTree.TreeNode;
 
