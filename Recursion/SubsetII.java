@@ -28,12 +28,10 @@ public class SubsetII {
         backtrackSubsetII(index+1, nums, current, ans);
         current.remove(current.size() - 1);
 
-        for (int i = index + 1; i < nums.length; i++){
-            if (nums[index] != nums[i]){
-                backtrackSubsetII(i, nums, current, ans);
-                return;
-            }
+        int next = index + 1;
+        while (next < nums.length && nums[next] == nums[index]) {
+            next++;
         }
-        backtrackSubsetII(nums.length, nums, current, ans);
+        backtrackSubsetII(next, nums, current, ans);
     }
 }

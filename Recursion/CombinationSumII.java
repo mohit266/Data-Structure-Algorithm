@@ -34,12 +34,11 @@ public class CombinationSumII {
         backtrack(index + 1, k - nums[index], nums, current, ans);
         current.remove(current.size()-1);
 
-        for (int i = index + 1; i < nums.length; i ++){
-            if (nums[index] != nums[i]){
-                backtrack(i, k , nums, current, ans);
-                break;
-            }
+        int next = index + 1;
+        while (next < nums.length && nums[next] == nums[index]) {
+            next++;
         }
+        backtrack(next, k, nums, current, ans);
     }
 
 }
