@@ -2,9 +2,9 @@ package com.dsa.Graphs;
 
 import java.util.*;
 
-public class DetectCycleInADirectedGraph {
+public class CourseScheduleI {
     public static void main(String[] args) {
-        DetectCycleInADirectedGraph d = new DetectCycleInADirectedGraph();
+        CourseScheduleI d = new CourseScheduleI();
         int V = 6;
         List<List<Integer>> adj= Arrays.asList(
                 List.of(1),
