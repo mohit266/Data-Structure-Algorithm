@@ -6,8 +6,8 @@ import java.util.Map;
 public class CountSubArrayWithMajorityElementII {
 
     public static void main(String[] args) {
-        int[] nums = {1,2,2,3};
-        int target = 2;
+        int[] nums = {1,2,3};
+        int target = 4;
 
         CountSubArrayWithMajorityElementII c = new CountSubArrayWithMajorityElementII();
         System.out.println(c.countMajoritySubarrays(nums, target));
@@ -16,10 +16,10 @@ public class CountSubArrayWithMajorityElementII {
     public long countMajoritySubarrays(int[] nums, int target) {
         int n = nums.length;
 
-        long[] freq = new long[2 * n + 1];
-        long[] prefixFreq = new long[2 * n + 1];
+        long[] freq = new long[2 * n + 2];
+        long[] prefixFreq = new long[2 * n + 2];
 
-        int idx = n;
+        int idx = n + 1;
 
         freq[idx] = 1;
         prefixFreq[idx] = 1;
