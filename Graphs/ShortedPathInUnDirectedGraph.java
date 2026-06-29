@@ -2,10 +2,10 @@ package com.dsa.Graphs;
 
 import java.util.*;
 
-public class ShortedPathInUnWeightedGraph {
+public class ShortedPathInUnDirectedGraph {
     public static void main(String[] args) {
 
-        ShortedPathInUnWeightedGraph s = new ShortedPathInUnWeightedGraph();
+        ShortedPathInUnDirectedGraph s = new ShortedPathInUnDirectedGraph();
 
         int n = 9;
         int m = 10;
