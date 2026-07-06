@@ -33,7 +33,7 @@ public class DisjointSet {
         return findParent(u) == findParent(v);
     }
 
-public void unionBySize(int u, int v){
+    public void unionBySize(int u, int v){
         int up_u = findParent(u);
         int up_v = findParent(v);
 
