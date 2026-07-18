@@ -1,9 +1,10 @@
-package com.dsa.GreedyAlgorithms;
+package com.dsa.PatternWise.Intervals;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+// 57. Insert Interval
 public class InsertInterval {
     public static void main(String[] args) {
         InsertInterval insertInterval = new InsertInterval();

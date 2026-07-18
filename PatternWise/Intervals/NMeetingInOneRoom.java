@@ -1,4 +1,4 @@
-package com.dsa.GreedyAlgorithms;
+package com.dsa.PatternWise.Intervals;
 
 import java.util.*;
 

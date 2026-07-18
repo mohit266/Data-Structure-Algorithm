@@ -1,9 +1,8 @@
-package com.dsa.Array;
+package com.dsa.PatternWise.Intervals;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
+// 56. Merge Intervals
 public class MergeIntervals {
     public static void main(String[] args) {
         int[][] intervals = {{1,3},{2,6},{8,10},{15,18}};
@@ -13,7 +12,7 @@ public class MergeIntervals {
     private static int[][] merge(int[][] intervals) {
         if (intervals.length == 0) return new int[0][0];
 
-        Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
+        Arrays.sort(intervals, Comparator.comparingInt(a -> a[0]));
 
         List<int[]> result = new ArrayList<>();
 

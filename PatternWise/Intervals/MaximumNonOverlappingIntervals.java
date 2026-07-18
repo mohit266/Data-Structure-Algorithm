@@ -1,10 +1,11 @@
-package com.dsa.GreedyAlgorithms;
+package com.dsa.PatternWise.Intervals;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
+// 435. Non-overlapping Intervals
 public class MaximumNonOverlappingIntervals {
     public static void main(String[] args) {
         MaximumNonOverlappingIntervals m1 = new MaximumNonOverlappingIntervals();
