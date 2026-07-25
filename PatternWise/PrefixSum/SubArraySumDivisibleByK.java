@@ -2,6 +2,7 @@ package com.dsa.PatternWise.PrefixSum;
 
 import java.util.HashMap;
 
+// 974. Subarray Sums Divisible by K
 public class SubArraySumDivisibleByK {
 
     public static void main(String[] args) {

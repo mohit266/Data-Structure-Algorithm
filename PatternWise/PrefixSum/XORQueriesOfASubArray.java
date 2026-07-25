@@ -2,6 +2,7 @@ package com.dsa.PatternWise.PrefixSum;
 
 import java.util.Arrays;
 
+// 1310. XOR Queries of a Subarray
 public class XORQueriesOfASubArray {
 
     public static void main(String[] args) {
