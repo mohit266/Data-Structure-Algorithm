@@ -1,5 +1,6 @@
-package com.dsa.SlidingWindowAndTwoPointer;
+package com.dsa.PatternWise.SlidingWindow.VariableWIndow;
 
+// 1004. Max Consecutive Ones III
 public class MaxConsecutiveOnesIII {
     public static void main(String[] args) {
         int[] arr = {0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1};
