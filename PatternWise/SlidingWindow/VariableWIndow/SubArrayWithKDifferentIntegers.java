@@ -1,4 +1,4 @@
-package com.dsa.SlidingWindowAndTwoPointer;
+package com.dsa.PatternWise.SlidingWindow.VariableWIndow;
 
 import java.util.HashMap;
 import java.util.Map;
