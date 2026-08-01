@@ -33,4 +33,16 @@ public class PredictWinner {
         return dp[left][right] = Math.max(pickLeft, pickRight);
     }
 
+    private int recursion(int[] nums, int left, int right) {
+
+        if (left == right) {
+            return nums[left];
+        }
+
+        int pickLeft = nums[left] - recursion(nums, left + 1, right);
+
+        int pickRight = nums[right] - recursion(nums, left, right - 1);
+
+        return Math.max(pickLeft, pickRight);
+    }
 }
