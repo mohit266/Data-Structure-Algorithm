@@ -1,10 +1,11 @@
-package com.dsa.StackAndQueues;
+package com.dsa.PatternWise.Stack;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
+// 496. Next Greater Element I
 public class NextGreaterElement {
     public static void main(String[] args) {
         //
