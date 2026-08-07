@@ -1,4 +1,4 @@
-package com.dsa.PatternWise.Stack;
+package com.dsa.PatternWise.MonotonicStack;
 
 import java.util.Arrays;
 import java.util.HashMap;
