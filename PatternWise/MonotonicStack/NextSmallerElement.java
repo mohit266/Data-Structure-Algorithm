@@ -1,4 +1,4 @@
-package com.dsa.StackAndQueues;
+package com.dsa.PatternWise.MonotonicStack;
 
 import java.util.Arrays;
 import java.util.Stack;

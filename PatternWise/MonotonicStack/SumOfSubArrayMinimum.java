@@ -1,7 +1,8 @@
-package com.dsa.StackAndQueues;
+package com.dsa.PatternWise.MonotonicStack;
 
 import java.util.Stack;
 
+// 907. Sum of Subarray Minimums
 public class SumOfSubArrayMinimum {
     public static void main(String[] args) {
         int[] arr = {3, 1, 2, 5};
