@@ -1,8 +1,11 @@
-package com.dsa.LinkedList;
+package com.dsa.PatternWise.LinkedList.SlowAndFastPointer;
+
+import com.dsa.LinkedList.Node;
 
 import static com.dsa.LinkedList.Utility.convertArrayToLL;
 import static com.dsa.LinkedList.Utility.printLL;
 
+// 19. Remove Nth Node From End of List
 public class RemoveNthNodeLL {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5};
