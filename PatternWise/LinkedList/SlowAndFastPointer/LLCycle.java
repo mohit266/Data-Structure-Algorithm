@@ -1,8 +1,8 @@
-package com.dsa.LinkedList;
+package com.dsa.PatternWise.LinkedList.SlowAndFastPointer;
 
-import static com.dsa.LinkedList.Utility.convertArrayToLL;
-import static com.dsa.LinkedList.Utility.printLL;
+import com.dsa.LinkedList.Node;
 
+// 141. Linked List Cycle
 public class LLCycle {
     public static void main(String[] args) {
 

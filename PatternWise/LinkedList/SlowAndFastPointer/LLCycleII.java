@@ -1,5 +1,9 @@
-package com.dsa.LinkedList;
+package com.dsa.PatternWise.LinkedList.SlowAndFastPointer;
 
+import com.dsa.LinkedList.Node;
+
+
+// 142. Linked List Cycle II
 public class LLCycleII {
     public static void main(String[] args) {
         int[] arr = {1, 2, 4, 7, 9};

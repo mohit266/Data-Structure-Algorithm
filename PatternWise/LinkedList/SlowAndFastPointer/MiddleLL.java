@@ -1,7 +1,10 @@
-package com.dsa.LinkedList;
+package com.dsa.PatternWise.LinkedList.SlowAndFastPointer;
+
+import com.dsa.LinkedList.Node;
 
 import static com.dsa.LinkedList.Utility.*;
 
+// 876. Middle of the Linked List
 public class MiddleLL {
     public static void main(String[] args) {
         int [] arr = {1, 2, 3, 4, 5};
