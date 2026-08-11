@@ -2,7 +2,6 @@ package com.dsa.PatternWise.LinkedList.SlowAndFastPointer;
 
 import com.dsa.LinkedList.Node;
 
-
 // 142. Linked List Cycle II
 public class LLCycleII {
     public static void main(String[] args) {

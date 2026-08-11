@@ -1,8 +1,11 @@
-package com.dsa.LinkedList;
+package com.dsa.PatternWise.LinkedList.SlowAndFastPointer;
+
+import com.dsa.LinkedList.Node;
 
 import static com.dsa.LinkedList.Utility.convertArrayToLL;
 import static com.dsa.LinkedList.Utility.printLL;
 
+// 234. Palindrome Linked List
 public class PalindromeLL {
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 2, 1};
