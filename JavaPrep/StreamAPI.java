@@ -208,5 +208,37 @@ public class StreamAPI {
         Map<Character, Long> m = input.chars().mapToObj(c -> (char) c)
                 .collect(Collectors.groupingBy(c -> c, Collectors.counting()));
         System.out.println("\n30. Count Frequency of Characters in a String :: "+m);
+
+        // 31. Find the longest name.
+        List<String> names = Arrays.asList(
+                "Mohit", "Rahul", "Amit", "Priya", "Raj"
+        );
+
+        String result = names.stream()
+                .max(Comparator.comparingInt(String::length))
+                .orElse(null);
+
+        System.out.println("\n31. Find the longest name :: " +result);
+
+        // 32. Find the second-longest name
+
+        String res = names.stream().sorted(Comparator.comparingInt(String::length).reversed())
+                                   .skip(1).findFirst().orElse(null);
+
+
+        System.out.println("\n32. Find the second-longest name :: " +res);
+
+        // 33. Return the first number that appears only once.
+
+        List<Integer> numbers = Arrays.asList(
+                10, 20, 10, 30, 20, 40, 30, 50
+        );
+
+        Integer num = numbers.stream().collect(Collectors.groupingBy(n ->n , LinkedHashMap::new, Collectors.counting()))
+                .entrySet().stream().filter(e-> e.getValue() > 1)
+                .map(Map.Entry::getKey).findFirst().orElse(null);
+
+        System.out.println("\n33. Return the first number that appears only once "+num);
+
     }
 }
