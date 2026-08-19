@@ -10,7 +10,7 @@ class CinemaSeats {
         int middle = 0b11000011;
         int right = 0b00001111;
 
-        Map<Integer, Integer> occupied = snew HashMap<Integer, Integer>();
+        Map<Integer, Integer> occupied = new HashMap<Integer, Integer>();
         for (int[] seat : reservedSeats) {
             if (seat[1] >= 2 && seat[1] <= 9) {
                 int origin = occupied.containsKey(seat[0])
