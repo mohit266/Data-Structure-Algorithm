@@ -1,8 +1,6 @@
-package com.dsa.SlidingWindowAndTwoPointer;
+package com.dsa.PatternWise.SlidingWindow.VariableWIndow;
 
-import java.util.HashMap;
-import java.util.Map;
-
+// 76. Minimum Window Substring
 public class MinimumWindowSubstring {
     public static void main(String[] args) {
         String s = "ADOBECODEBANC";
