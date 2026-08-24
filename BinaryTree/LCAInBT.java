@@ -38,6 +38,34 @@ public class LCAInBT {
         }
     }
 
+    public TreeNode lowestCommonAncestorRem(TreeNode root, TreeNode p, TreeNode q) {
+        TreeNode[] result = new TreeNode[1];
+        recursion(root, p, q, result);
+        return result[0];
+    }
+
+    public int recursion(TreeNode root, TreeNode p, TreeNode q, TreeNode[] result){
+        if (root == null){
+            return 0;
+        }
+
+        int left = recursion(root.left, p, q, result);
+        int right = recursion(root.right, p, q, result);
+        int self = 0;
+
+        if (root == p || root == q){
+            self = 1;
+        }
+
+        int total = self + left + right;
+
+        if (total == 2 && result[0] == null) {
+            result[0] = root;
+        }
+
+        return total;
+    }
+
     public static TreeNode lowestCommonAncestorBruteForce(TreeNode root, TreeNode p, TreeNode q) {
         List<TreeNode> pList = traverse(root, p, new ArrayList<>());
         List<TreeNode> qList = traverse(root, q, new ArrayList<>());
