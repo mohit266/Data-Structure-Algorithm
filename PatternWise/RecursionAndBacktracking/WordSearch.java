@@ -1,5 +1,6 @@
-package com.dsa.Recursion;
+package com.dsa.PatternWise.RecursionAndBacktracking;
 
+// 79. Word Search
 public class WordSearch {
     public static void main(String[] args) {
         char[][] board =   { {'A', 'B', 'C', 'E'} , {'S' ,'F' ,'C' ,'S'} , {'A', 'D', 'E', 'E'} };

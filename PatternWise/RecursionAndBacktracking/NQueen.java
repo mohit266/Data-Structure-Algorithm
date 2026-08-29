@@ -1,7 +1,8 @@
-package com.dsa.Recursion;
+package com.dsa.PatternWise.RecursionAndBacktracking;
 
 import java.util.*;
 
+// 51. N-Queens
 class NQueen {
 
     public static void main(String[] args) {

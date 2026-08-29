@@ -1,8 +1,9 @@
-package com.dsa.Recursion;
+package com.dsa.PatternWise.RecursionAndBacktracking;
 
 import java.util.ArrayList;
 import java.util.List;
 
+// 216. Combination Sum III
 public class CombinationIII {
     public static void main(String[] args) {
         int k = 3;

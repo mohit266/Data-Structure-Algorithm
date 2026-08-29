@@ -1,8 +1,9 @@
-package com.dsa.Recursion;
+package com.dsa.PatternWise.RecursionAndBacktracking;
 
 import java.util.ArrayList;
 import java.util.List;
 
+// 131. Palindrome Partitioning
 public class PalindromePartitioning {
     public static void main(String[] args) {
         String s = "aabaa";
