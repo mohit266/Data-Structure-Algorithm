@@ -1,7 +1,8 @@
-package com.dsa.Recursion;
+package com.dsa.PatternWise.RecursionAndBacktracking;
 
 import java.util.Arrays;
 
+// 37. Sudoku Solver
 class SudokuSolver {
 
     public static void main(String[] args) {
