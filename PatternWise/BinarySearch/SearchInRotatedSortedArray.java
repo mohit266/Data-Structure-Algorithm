@@ -1,6 +1,6 @@
-package com.dsa.BinarySearch;
+package com.dsa.PatternWise.BinarySearch;
 
-// https://leetcode.com/problems/search-in-rotated-sorted-array/description/
+// 33. Search in Rotated Sorted Array
 public class SearchInRotatedSortedArray {
     public static void main(String[] args) {
         int[] arr = {4,5,6,7,8,1,2,3};
