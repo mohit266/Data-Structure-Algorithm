@@ -1,15 +1,16 @@
-package com.dsa.BinarySearch;
+package com.dsa.PatternWise.BinarySearch;
 
+// 74. Search a 2D Matrix
 public class SearchInTwoDMatrix {
     public static void main(String[] args) {
         int[][] mat = {{1,3,5,7}, {10,11,16,20}, {23,30,34,60}};
         int target = 13;
 
-        System.out.println(searchMatrix(mat, target));
+        System.out.println(searchMat(mat, target));
     }
 
     // Optimal Approach
-    public boolean searchMat(int[][] matrix, int target) {
+    public static boolean searchMat(int[][] matrix, int target) {
         // Get the number of rows
         int n = matrix.length;
 

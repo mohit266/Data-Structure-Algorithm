@@ -1,5 +1,6 @@
-package com.dsa.BinarySearch;
+package com.dsa.PatternWise.BinarySearch;
 
+// 875. Koko Eating Bananas
 public class KokoEatingBananas {
     public static void main(String[] args) {
         int[] piles = {3,6,7,11};

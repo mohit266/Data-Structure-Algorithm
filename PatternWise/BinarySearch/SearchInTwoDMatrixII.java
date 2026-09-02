@@ -1,5 +1,6 @@
-package com.dsa.BinarySearch;
+package com.dsa.PatternWise.BinarySearch;
 
+// 240. Search a 2D Matrix II
 public class SearchInTwoDMatrixII {
     public static void main(String[] args) {
         int[][] matrix = {
@@ -18,16 +19,16 @@ public class SearchInTwoDMatrixII {
         int n = matrix.length;
         int m = matrix[0].length;
 
-        int row = 0;
-        int col = m-1;
+        int row =  m-1;
+        int col = 0;
 
-        while (row < n && col >= 0){
+        while (row >= 0 && col < n){
             if (matrix[row][col] == target){
                 return true;
-            } else if (matrix[row][col] < target) {
-                row++;
+            } else if (matrix[row][col] < target){
+                col++;
             } else {
-                col--;
+                row--;
             }
         }
         return false;
