@@ -1,8 +1,8 @@
-package com.dsa.Heap;
+package com.dsa.PatternWise.Heap;
 
 import java.util.PriorityQueue;
-import java.util.Random;
 
+//215. Kth Largest Element in an Array
 public class KthLargestElementInArray {
     public static void main(String[] args) {
         KthLargestElementInArray k = new KthLargestElementInArray();
@@ -16,15 +16,16 @@ public class KthLargestElementInArray {
     public int kthLargestEle(int[] nums, int k) {
         PriorityQueue<Integer> pq = new PriorityQueue<>();
 
-        for (int i = 0; i <= k - 1; i++){
+        for (int i = 0; i < k; i++){
             pq.offer(nums[i]);
         }
 
-        for (int i = k; i <= nums.length-1; i++){
-            if (!pq.isEmpty() && nums[i] > pq.peek()){
-                pq.poll();
-                pq.offer(nums[i]);
+        for (int i = k; i < nums.length; i++){
+            if (!pq.isEmpty() && pq.peek() >= nums[i]){
+                continue;
             }
+            pq.poll();
+            pq.offer(nums[i]);
         }
         return !pq.isEmpty() ? pq.peek() : -1;
     }
