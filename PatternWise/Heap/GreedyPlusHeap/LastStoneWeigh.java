@@ -1,4 +1,4 @@
-package com.dsa.PatternWise.Heap;
+package com.dsa.PatternWise.Heap.GreedyPlusHeap;
 
 import java.util.PriorityQueue;
 
