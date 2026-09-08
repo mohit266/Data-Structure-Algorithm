@@ -1,4 +1,6 @@
-package com.dsa.BinaryTree;
+package com.dsa.PatternWise.Tree.BinaryTree;
+
+import com.dsa.BinaryTree.TreeNode;
 
 // 112. Path Sum
 public class PathSum {

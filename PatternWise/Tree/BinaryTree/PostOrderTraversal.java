@@ -1,10 +1,13 @@
-package com.dsa.BinaryTree;
+package com.dsa.PatternWise.Tree.BinaryTree;
+
+import com.dsa.BinaryTree.TreeNode;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Stack;
 
+// 145. Binary Tree Postorder Traversal
 public class PostOrderTraversal {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);

@@ -1,7 +1,10 @@
-package com.dsa.BinaryTree;
+package com.dsa.PatternWise.Tree.BinaryTree;
+
+import com.dsa.BinaryTree.TreeNode;
 
 import java.util.*;
 
+// 199. Binary Tree Right Side View
 public class RightViewOfBT {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);

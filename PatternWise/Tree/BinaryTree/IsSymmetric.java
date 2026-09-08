@@ -1,5 +1,8 @@
-package com.dsa.BinaryTree;
+package com.dsa.PatternWise.Tree.BinaryTree;
 
+import com.dsa.BinaryTree.TreeNode;
+
+// 101. Symmetric Tree
 public class IsSymmetric {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);

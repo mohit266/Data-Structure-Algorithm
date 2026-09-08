@@ -1,7 +1,10 @@
-package com.dsa.BinaryTree;
+package com.dsa.PatternWise.Tree.BinaryTree;
+
+import com.dsa.BinaryTree.TreeNode;
 
 import java.util.*;
 
+// 103. Binary Tree Zigzag Level Order Traversal
 public class ZigZagOrSpiralTraversal {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);

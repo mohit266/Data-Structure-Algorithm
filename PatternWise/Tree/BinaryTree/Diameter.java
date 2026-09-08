@@ -1,5 +1,8 @@
-package com.dsa.BinaryTree;
+package com.dsa.PatternWise.Tree.BinaryTree;
 
+import com.dsa.BinaryTree.TreeNode;
+
+// 543. Diameter of Binary Tree
 public class Diameter {
 
     public static void main(String[] args) {

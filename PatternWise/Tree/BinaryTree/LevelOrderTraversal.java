@@ -1,10 +1,10 @@
-package com.dsa.BinaryTree;
+package com.dsa.PatternWise.Tree.BinaryTree;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import com.dsa.BinaryTree.TreeNode;
 
+import java.util.*;
+
+// 102. Binary Tree Level Order Traversal
 public class LevelOrderTraversal {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);

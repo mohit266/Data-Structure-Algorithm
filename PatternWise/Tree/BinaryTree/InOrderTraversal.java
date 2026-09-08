@@ -1,11 +1,12 @@
-package com.dsa.BinaryTree;
+package com.dsa.PatternWise.Tree.BinaryTree;
 
-import com.sun.source.tree.Tree;
+import com.dsa.BinaryTree.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
+// 94. Binary Tree Inorder Traversal
 public class InOrderTraversal {
 
     public static void main(String[] args) {
