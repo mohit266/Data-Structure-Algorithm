@@ -1,8 +1,11 @@
-package com.dsa.BinaryTree;
+package com.dsa.PatternWise.Tree.BinaryTree;
+
+import com.dsa.BinaryTree.TreeNode;
 
 import java.util.ArrayList;
 import java.util.List;
 
+// 236. Lowest Common Ancestor of a Binary Tree
 public class LCAInBT {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);
@@ -19,6 +22,33 @@ public class LCAInBT {
         TreeNode p = root.left.left;
         TreeNode res = lowestCommonAncestor(root, p, q);
         System.out.println(res.data);
+    }
+
+    TreeNode ans = null;
+    public TreeNode lcaNewApproach(TreeNode root, TreeNode p, TreeNode q) {
+        lca(root, p, q);
+        return ans;
+    }
+
+    public int lca(TreeNode node, TreeNode p, TreeNode q){
+        if (node == null){
+            return 0;
+        }
+
+        int left = lca(node.left, p, q);
+        int right = lca(node.right, p, q);
+
+        int self = 0;
+        if (node == p || node == q){
+            self = 1;
+        }
+
+        int total = self + right + left;
+
+        if (total == 2 && ans == null){
+            ans = node;
+        }
+        return total;
     }
 
     public static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
