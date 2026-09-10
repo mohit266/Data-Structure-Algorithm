@@ -1,5 +1,8 @@
-package com.dsa.BinaryTree;
+package com.dsa.PatternWise.Tree.BinaryTree;
 
+import com.dsa.BinaryTree.TreeNode;
+
+// 124. Binary Tree Maximum Path Sum
 public class MaximumPathSum {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(-3);
