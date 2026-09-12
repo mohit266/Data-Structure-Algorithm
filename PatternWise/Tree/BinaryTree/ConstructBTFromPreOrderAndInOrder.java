@@ -1,7 +1,10 @@
-package com.dsa.BinaryTree;
+package com.dsa.PatternWise.Tree.BinaryTree;
+
+import com.dsa.BinaryTree.TreeNode;
 
 import java.util.HashMap;
 
+// 105. Construct Binary Tree from Preorder and Inorder Traversal
 public class ConstructBTFromPreOrderAndInOrder {
     public static void main(String[] args) {
         int[] preOrder = {3, 9, 20, 15, 7};
