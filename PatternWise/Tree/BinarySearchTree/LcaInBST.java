@@ -1,5 +1,8 @@
-package com.dsa.BinarySearchTree;
+package com.dsa.PatternWise.Tree.BinarySearchTree;
 
+import com.dsa.BinarySearchTree.TreeNode;
+
+// 235. Lowest Common Ancestor of a Binary Search Tree
 public class LcaInBST {
     public static void main(String[] args) {
         LcaInBST obj = new LcaInBST();

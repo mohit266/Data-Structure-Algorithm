@@ -1,5 +1,8 @@
-package com.dsa.BinarySearchTree;
+package com.dsa.PatternWise.Tree.BinarySearchTree;
 
+import com.dsa.BinarySearchTree.TreeNode;
+
+// 98. Validate Binary Search Tree
 public class CheckIfTreeIsBST {
 
     public static void main(String[] args) {
