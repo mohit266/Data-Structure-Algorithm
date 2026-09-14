@@ -1,5 +1,8 @@
-package com.dsa.BinarySearchTree;
+package com.dsa.PatternWise.Tree.BinarySearchTree;
 
+import com.dsa.BinarySearchTree.TreeNode;
+
+// 99. Recover Binary Search Tree
 public class CorrectBSTWithTwoSwappedNode {
 
     public static void main(String[] args) {
