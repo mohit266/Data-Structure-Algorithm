@@ -15,7 +15,7 @@ public class ReverseDegreeOfAString {
         int degree = 0;
 
         for (int i = 0; i < s.length(); i++){
-            int sum = (122 - s.charAt(i) + 1) * (i + 1);
+            int sum = ('z' - s.charAt(i) + 1) * (i + 1);
             degree += sum;
         }
 
